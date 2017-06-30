@@ -218,7 +218,7 @@ CREATE TABLE `thank_member_loginlog` (
   `password` varchar(50) NOT NULL DEFAULT '' COMMENT '尝试错误密码',
   `info` varchar(1000) NOT NULL DEFAULT '' COMMENT '其他说明',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='后台登陆日志表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='会员登录日志表';
 
 -- ----------------------------
 -- Records of thank_member_loginlog
@@ -332,7 +332,7 @@ CREATE TABLE `thank_recharge` (
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`),
   KEY `member_id` (`member_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='VIP申请记录';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='会员充值记录';
 
 -- ----------------------------
 -- Records of thank_recharge
